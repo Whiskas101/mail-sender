@@ -51,6 +51,7 @@ def sendMail(topic : str):
     
     body = f"""
         Mail regarding {topic} 
+        
         This mail was sent by a helper bot, please ignore if this wasnt requested by you
     
     """
