@@ -38,9 +38,15 @@ def runScreenShotApp(directoryName : str):
 def sendMail(topic : str):
     reciever = input("Enter Your Email Address : ")
 
+    if reciever == "":
+        senderMail(topic)
+        return
+
     senderMail = "getintouchwithvic2@gmail.com"
     app_password = "psrp obdl stym opck"
     yag = yagmail.SMTP(senderMail, app_password)
+
+    
 
     
     body = f"""
